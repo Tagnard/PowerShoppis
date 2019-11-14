@@ -1,3 +1,6 @@
 [submodule "lib/SAPI"]
-	path = lib/SAPI
+	path = libs/SAPI
+	url = https://github.com/Tagnard/SAPI.git
+[submodule "libs/SAPI"]
+	path = libs/SAPI
 	url = https://github.com/Tagnard/SAPI.git
