@@ -12,11 +12,11 @@ namespace PowerShoppis
         )]
         public PSCredential Credential { get; set; }
 
-        private API.Client Client;
+        private SAPI.Client Client;
 
         protected override void BeginProcessing()
         {
-            Client = new API.Client(Credential);
+            Client = new SAPI.Client(Credential);
         }
 
         protected override void ProcessRecord()

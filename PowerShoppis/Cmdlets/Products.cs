@@ -1,4 +1,5 @@
 ﻿using PowerShoppis.Models;
+using SAPI.Models;
 using System.Collections.Generic;
 using System.Management.Automation;
 
@@ -46,13 +47,13 @@ namespace PowerShoppis
         {
             if (All)
             {
-                (List<Product> items, int total) = Client.AllProducts();
+                (List<ProductResponse> items, int total) = Client.AllProducts();
                 WriteObject(items, true);
                 WriteVerbose("Total items: " + total);
             }
             else
             {
-                (List<Product> items, int total) = Client.Products(Skip, Limit);
+                (List<ProductResponse> items, int total) = Client.Products(Skip, Limit);
                 WriteObject(items, true);
                 WriteVerbose("Total items: " + total);
             }   
@@ -88,16 +89,16 @@ namespace PowerShoppis
         )]
         public int Limit { get; set; } = 25;
 
-        private API.Client Client;
+        private SAPI.Client Client;
 
         protected override void BeginProcessing()
         {
-            Client = new API.Client(Credential);
+            Client = new SAPI.Client(Credential);
         }
 
         protected override void ProcessRecord()
         {
-            WriteObject(Client.SearchProducts(Query, 0, Limit), true);
+            // WriteObject(Client.SearchProducts(Query, 0, Limit), true);
         }
 
         protected override void EndProcessing()
