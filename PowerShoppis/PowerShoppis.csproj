@@ -66,7 +66,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\lib\SAPI\SAPI\SAPI.csproj">
+    <ProjectReference Include="..\libs\SAPI\SAPI\SAPI.csproj">
       <Project>{86ff24f3-5a97-456d-896e-61af57f6d21d}</Project>
       <Name>SAPI</Name>
     </ProjectReference>

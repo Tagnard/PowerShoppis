@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerShoppis", "PowerShoppis\PowerShoppis.csproj", "{AC24A2F6-A531-49F2-9908-08FDF44B8EFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAPI", "lib\SAPI\SAPI\SAPI.csproj", "{86FF24F3-5A97-456D-896E-61AF57F6D21D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAPI", "libs\SAPI\SAPI\SAPI.csproj", "{86FF24F3-5A97-456D-896E-61AF57F6D21D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
